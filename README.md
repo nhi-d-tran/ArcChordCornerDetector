@@ -7,31 +7,39 @@ I. Inputs:
 The format of the input is as follows:
 
 #rows #cols minVal maxVal // image header
+
 label // the label of the object
+
 r1 c1
+
 r2 c2
+
 r3 c3
-:
-:
+...
 
 - Input2 (console): ask the user from condole for K. 2*K will be used as the length of the arc-Chord in the maximum arc-Chord distance computation
 
 *************************************
 II. Outputs:
-- Output1 (argv[]): The result of the maximum arc-Chord distance of the object boundary points plus corner indicating label. The format of this output file is as follows:
+- Output1 (argv[]): The result of the maximum arc-Chord distance of the object boundary points plus corner indicating label. 
 
-#rows #cols minVal maxVal // image header
+The format of this output file is as follows:
+
+#rows #cols minVal maxVal 
+
 label // the label of the object.
-#pts // the number of boundary points
-r1 c1 1 // not a corner
-r2 c2 9 // a corner (use 9 for corner indicator for this project)
-r3 c3 1 // not a corner
-:
-:
 
-- Output2 (argv[]): Pretty print (displaying) as an image of the result of
-the Maximum arc-Chord distance corner detection, where corner points are printed
-as 9 and non-corner points are printed as 1.
+#pts // the number of boundary points
+
+r1 c1 1 // not a corner
+
+r2 c2 9 // a corner (use 9 for corner indicator for this project)
+
+r3 c3 1 // not a corner
+
+...
+
+- Output2 (argv[]): Pretty print (displaying) as an image of the result of the Maximum arc-Chord distance corner detection, where corner points are printed as 9 and non-corner points are printed as 1.
 
 - Output3 (argv[]): for all debugging output
 
